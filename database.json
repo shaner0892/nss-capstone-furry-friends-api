@@ -1,0 +1,68 @@
+{
+    "dogs": [
+        {
+            "id": 1,
+            "name": "Baxter",
+            "age": 4,
+            "gender": "Male",
+            "bio": "Hi my name is Baxter and I'm a very good boy!",
+            "adoptable": false,
+            "rescueId": 2,
+            "userId": 1,
+            "goodWKids": true,
+            "goodWDogs": true,
+            "goodWCats": true,
+            "sizeId": 3
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Hilary",
+            "lastName": "Shaner",
+            "email": "hs@gmail.com",
+            "bio": "Hello! I'm Hilary and I want to live on a farm with 20 dogs"
+        }
+
+    ],
+    "rescues": [
+        {
+            "id": 1,
+            "name": "Metro Animal Care and Control",
+            "address": "5125 Harding Place Nashville, TN 37211",
+            "email": "foster.macc@nashville.gov"
+        },
+        {
+            "id": 2,
+            "name": "Nashville Humane Association",
+            "address": "213 Oceola Avenue Nashville, TN 37209",
+            "email": "adopt@nashvillehumane.org"
+        },
+        {
+            "id": 3,
+            "name": "Nashville PITTIE",
+            "address": "PO Box 413 LaVergne, TN 37086",
+            "email": "info@nashvillepittie.org"
+        },
+        {
+            "id": 4,
+            "name": "Wags and Walks - Nashville",
+            "address": "2236 Federal Ave Los Angeles, CA 90064",
+            "email": "nashville@wagsandwalks.org"
+        }
+    ],
+    "sizes": [
+        {
+            "id": 1,
+            "size": "Small (1-19 lbs)"
+        },
+        {
+            "id": 2,
+            "size": "Medium (20-59 lbs)"
+        },
+        {
+            "id": 3,
+            "size": "Large (60+ lbs)"
+        }
+    ]
+}
