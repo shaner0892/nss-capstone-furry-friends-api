@@ -1,68 +1,529 @@
 {
-    "dogs": [
-        {
-            "id": 1,
-            "name": "Baxter",
-            "age": 4,
-            "gender": "Male",
-            "bio": "Hi my name is Baxter and I'm a very good boy!",
-            "adoptable": false,
-            "rescueId": 2,
-            "userId": 1,
-            "goodWKids": true,
-            "goodWDogs": true,
-            "goodWCats": true,
-            "sizeId": 3
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "firstName": "Hilary",
-            "lastName": "Shaner",
-            "email": "hs@gmail.com",
-            "bio": "Hello! I'm Hilary and I want to live on a farm with 20 dogs"
-        }
-
-    ],
-    "rescues": [
-        {
-            "id": 1,
-            "name": "Metro Animal Care and Control",
-            "address": "5125 Harding Place Nashville, TN 37211",
-            "email": "foster.macc@nashville.gov"
-        },
-        {
-            "id": 2,
-            "name": "Nashville Humane Association",
-            "address": "213 Oceola Avenue Nashville, TN 37209",
-            "email": "adopt@nashvillehumane.org"
-        },
-        {
-            "id": 3,
-            "name": "Nashville PITTIE",
-            "address": "PO Box 413 LaVergne, TN 37086",
-            "email": "info@nashvillepittie.org"
-        },
-        {
-            "id": 4,
-            "name": "Wags and Walks - Nashville",
-            "address": "2236 Federal Ave Los Angeles, CA 90064",
-            "email": "nashville@wagsandwalks.org"
-        }
-    ],
-    "sizes": [
-        {
-            "id": 1,
-            "size": "Small (1-19 lbs)"
-        },
-        {
-            "id": 2,
-            "size": "Medium (20-59 lbs)"
-        },
-        {
-            "id": 3,
-            "size": "Large (60+ lbs)"
-        }
-    ]
+  "dogs": [
+    {
+      "name": "Baxter",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "Hi my name is Baxter and I'm a very good boy! My favorite things are peanut butter and getting the zoomies in the rain.",
+      "adoptable": false,
+      "rescueId": 2,
+      "userId": 1,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647543600/s9oo5imcwndnp4oanaqm.jpg",
+      "id": 1
+    },
+    {
+      "name": "Tegan",
+      "ageId": 1,
+      "sex": "Male",
+      "bio": "Tegan the tazmanian devil! I'm cute as a button but you better watch out cause I'll steal your socks! I love chewing up sticks and long walks on the beach.",
+      "adoptable": false,
+      "rescueId": 3,
+      "userId": 1,
+      "goodWKids": false,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647543092/tirmbeofx1tsczywy740.jpg",
+      "id": 2
+    },
+    {
+      "name": "Tucker",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "Tucker is a 5 year old neutered male who acts like a puppy. He likes to sniff, play with toys, and go on walks with volunteers. Just look at his happy face!",
+      "adoptable": true,
+      "rescueId": 1,
+      "userId": 5,
+      "goodWKids": true,
+      "goodWDogs": false,
+      "goodWCats": false,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647548618/jzzulhcait15epsvj3ht.jpg",
+      "id": 3
+    },
+    {
+      "name": "Destiny",
+      "ageId": 1,
+      "sex": "Female",
+      "bio": "Hi! I'm a 5 month old cutie looking for my new best friend and a big backyard to romp around in. I'm quickly learning my puppy basics and even pee outside now!",
+      "adoptable": true,
+      "rescueId": 4,
+      "userId": 3,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 2,
+      "id": 4,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647456366/wzeorh3fwb6su0ivqmpl.jpg"
+    },
+    {
+      "name": "Jacks",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "Meet Jacks! This 5 year old, 70 lb dignified gentleman is looking for a home to call his own! Preferably one that keeps his toy basket full of toys for playtime. Jacks loves them all - stuffy, squeaky, big, small - you name it, and he’ll play with it. Despite his high enthusiasm and pride in his toys, this boys overall demeanor is pretty laidback. He would love to lounge and hang with his people and keep your company. If you are looking for a middle-aged pup that is friendly and affectionate with a well-balanced personality, Jacks may be your guy!",
+      "adoptable": true,
+      "rescueId": 4,
+      "userId": 1,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647982375/hiupzdktr8npyx7kkxts.jpg",
+      "id": 5
+    },
+    {
+      "name": "Luna",
+      "ageId": 2,
+      "sex": "Female",
+      "bio": "Adopt Luna (Luna, aka Luna Tunes, aka Lunatic)! She still has some puppy energy and rambunctiousness at times but is also an expert cuddler and enjoys napping with her people. Luna is great with other dogs, house trained, gives sweet kisses, and has the very best happy full-body wiggle.",
+      "adoptable": true,
+      "rescueId": 1,
+      "userId": 2,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647459907/ftaqw9cyosoufyjtjqde.jpg",
+      "id": 6
+    },
+    {
+      "name": "Finn",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "I'm a shit head",
+      "adoptable": false,
+      "rescueId": 5,
+      "userId": 7,
+      "goodWKids": false,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647458931/zknfpcu7y46hxuys7bqe.jpg",
+      "id": 7
+    },
+    {
+      "name": "Chip",
+      "ageId": 1,
+      "sex": "Male",
+      "bio": "Chip is a little dude, but he's got a big heart. He's got all of his basics down and he's ready to find his furever family! We suspect he's a mix including some Boston Terrier and Chihuahua. So if you're looking for the sweetest pocket pup here's your guy!",
+      "adoptable": true,
+      "rescueId": 2,
+      "userId": 2,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 1,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647455031/w7kcfed2g4t5yomrfh5o.jpg",
+      "id": 8
+    },
+    {
+      "name": "Ranger",
+      "ageId": 3,
+      "sex": "Male",
+      "bio": "It doesn’t get better than Ranger!! This old man has been a staff favorite since day one. This guy is the sweetest pup with a heart of gold. He loves EVERYONE and everything and will not hesitate to make you his new best friend. He’s 9 years old and 60 lbs of pure goodness and would love to find a home to live out the rest of his glory days. This ole guy has really proven that he has so much life and love to give! Whoever ends up adopting him will be so lucky.",
+      "adoptable": true,
+      "rescueId": 4,
+      "userId": 6,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647550944/wbsquk0ypqmxbhitdbdw.jpg",
+      "id": 9
+    },
+    {
+      "name": "Nova",
+      "ageId": 2,
+      "sex": "Female",
+      "bio": "Nova is one of our longest residents and I can’t believe her beautiful face has lasted this long here! She is a happy, playful girl who loves being the center of attention. She loves chewing on her toys and chasing after the ball. She has been in playgroups and does well with other dogs. She would make an awesome running buddy, but also wants to snuggle on the couch. She is known to be a great adventure companion - she does so well in the car!",
+      "adoptable": true,
+      "rescueId": 1,
+      "userId": 5,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647549231/xjz08kklqiz9whwnweld.jpg",
+      "id": 10
+    },
+    {
+      "name": "Boss",
+      "ageId": 1,
+      "sex": "Male",
+      "bio": "His name might be Boss, but this sweet fella is the kind of boss you will be happy spending lots and lots of time with outside of work hours. Boss is a playful guy and loves to run all over our play yard. It takes a little bit of time for him to warm up to you, but ounce he is comfortable Boss is a loving fella! He really enjoys chasing the tennis ball and does well on the leash. He is great with every dog that he meets!",
+      "adoptable": true,
+      "rescueId": 1,
+      "userId": 6,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647550412/pe9yn8kblcj9gcdtq4kh.jpg",
+      "id": 11
+    },
+    {
+      "name": "Portland",
+      "ageId": 2,
+      "sex": "Female",
+      "bio": "Portland is a super sweet girl who loves to play in the backyard and snuggle on the sofa with you! Portland is working hard on learning all of her basics skills.  We believe she will thrive in a home with no other dogs or cats. ",
+      "adoptable": true,
+      "rescueId": 3,
+      "userId": 6,
+      "goodWKids": false,
+      "goodWDogs": false,
+      "goodWCats": false,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647550689/bwh0scpxlf6xusjy5nkr.png",
+      "id": 12
+    },
+    {
+      "name": "Corduroy",
+      "ageId": 3,
+      "sex": "Male",
+      "bio": "The name is Corduroy and I'm truly the best boy. I might be on the older side, but I still like to play. My favorite thing is snuggling on the couch watching Downton Abbey. I think we'd make a great duo!",
+      "adoptable": true,
+      "rescueId": 3,
+      "userId": 3,
+      "goodWKids": false,
+      "goodWDogs": false,
+      "goodWCats": false,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647459370/hrvntkfsdy74w4sxqfbj.png",
+      "id": 13
+    },
+    {
+      "name": "Coco",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "Coco was the most shy boy I've ever met. At first, he was too scared to walk on a leash or even come over for treats. But after meeting his foster brother, he has made a complete turn around. He's the happiest boy and now he lives with his furever family!",
+      "adoptable": false,
+      "rescueId": 1,
+      "userId": 5,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647628567/vbkghxjdzmzna73rwxw0.jpg",
+      "id": 14
+    },
+    {
+      "name": "Teddy",
+      "ageId": 3,
+      "sex": "Male",
+      "bio": "Teddy is everyone's best friend. Need a chill dog to take to the park? To go grab a pint at a brewery? Snuggle buddy on a rainy day? Ted's your man.",
+      "adoptable": false,
+      "rescueId": 5,
+      "userId": 7,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 1,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1648063592/jlg4v0msel0txmagi3hp.jpg",
+      "id": 15
+    },
+    {
+      "name": "Pancake",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "I was found running with the cars on the interstate and my owners never came to claim me. Idk why cause I'm the SWEETEST thicc boy you've ever met. My head is as big as watermelon but not as big as my heart. Come meet me and maybe we can be best friends!",
+      "adoptable": true,
+      "rescueId": 5,
+      "userId": 2,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": false,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647960668/krqzcca5d7d8xjr7e33j.jpg",
+      "id": 16
+    },
+    {
+      "name": "Missy",
+      "ageId": 3,
+      "sex": "Female",
+      "bio": "Hi! I'm Missy and I just want to cuddle up on the couch watching tv with my new best friend (is it you??)",
+      "adoptable": true,
+      "rescueId": 2,
+      "userId": 1,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647981899/ywbjxv3lsouorr89mo0q.jpg",
+      "id": 17
+    },
+    {
+      "name": "Tater",
+      "ageId": 2,
+      "sex": "Male",
+      "bio": "There’s no one like Tater! This absolutely precious 4-year-old bully mix greets every single person he meets with lots of love and kisses. Tater is a medium-energy guy who loves a good game of tug. It's his favorite! When it's cuddle time, Tater likes to sleep right next to you to make sure you're still there. He deserves nothing but the best so we are looking for an exceptional home for this sweet nugget.",
+      "adoptable": true,
+      "rescueId": 4,
+      "userId": 1,
+      "goodWKids": true,
+      "goodWDogs": true,
+      "goodWCats": true,
+      "sizeId": 2,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647982207/afqlh2gurqbnzv4qhp8x.jpg",
+      "id": 18
+    },
+    {
+      "name": "Alexis",
+      "ageId": 1,
+      "sex": "Female",
+      "bio": "Ew, David!",
+      "adoptable": true,
+      "rescueId": 2,
+      "userId": 4,
+      "goodWKids": false,
+      "goodWDogs": false,
+      "goodWCats": false,
+      "sizeId": 1,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647459589/jxlb7pflvaai8kl8bccl.jpg",
+      "id": 19
+    },
+    {
+      "name": "Bruce",
+      "ageId": 3,
+      "sex": "Male",
+      "bio": "Hiiiii",
+      "adoptable": true,
+      "rescueId": 3,
+      "userId": 2,
+      "goodWKids": true,
+      "goodWDogs": false,
+      "goodWCats": false,
+      "sizeId": 3,
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1648139596/default_dxztcl.jpg",
+      "id": 21
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Hilary",
+      "lastName": "Shaner",
+      "email": "hs@gmail.com",
+      "foster": true,
+      "bio": "Hello! I'm Hilary and I want to live on a farm with 20"
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Jordankflnsv'k",
+      "email": "sj@gmail.com",
+      "foster": false,
+      "bio": "Cats > Dogs but dogs are cool too I guess js kb",
+      "id": 2
+    },
+    {
+      "firstName": "Leslie",
+      "lastName": "Knope",
+      "email": "lk@gmail.com",
+      "foster": true,
+      "bio": "Leslie Knope for President! I'll fill the White House with animals from the shelter!",
+      "id": 3
+    },
+    {
+      "firstName": "David",
+      "lastName": "Rose",
+      "email": "dr@gmail.com",
+      "foster": true,
+      "bio": "Ew, cats!",
+      "id": 4
+    },
+    {
+      "firstName": "Dwight",
+      "lastName": "Schrute",
+      "email": "ds@gmail.com",
+      "foster": true,
+      "bio": "Fact, bears eat beets. Bears, beets, \"Battlestar Galactica.\"",
+      "id": 5
+    },
+    {
+      "bio": "Hi, I’m Chandler. I make jokes when I’m uncomfortable. Can I interest you in a sarcastic comment?",
+      "firstName": "Chandler",
+      "lastName": "Bing",
+      "foster": true,
+      "email": "cb@gmail.com",
+      "id": 6
+    },
+    {
+      "firstName": "Sarah",
+      "lastName": "Fittro",
+      "email": "sf@gmail.com",
+      "bio": "I love dogs",
+      "foster": false,
+      "id": 7
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "email": "bss@gmail.com",
+      "id": 8
+    },
+    {
+      "firstName": "Bill",
+      "lastName": "Smith",
+      "email": "bfjd@gmail.com",
+      "": "on",
+      "id": 9
+    }
+  ],
+  "rescues": [
+    {
+      "id": 1,
+      "name": "Metro Animal Care and Control",
+      "address": "5125 Harding Place Nashville, TN 37211",
+      "email": "foster.macc@nashville.gov"
+    },
+    {
+      "id": 2,
+      "name": "Nashville Humane Association",
+      "address": "213 Oceola Avenue Nashville, TN 37209",
+      "email": "adopt@nashvillehumane.org"
+    },
+    {
+      "id": 3,
+      "name": "Nashville PITTIE",
+      "address": "PO Box 413 LaVergne, TN 37086",
+      "email": "info@nashvillepittie.org"
+    },
+    {
+      "id": 4,
+      "name": "Wags and Walks - Nashville",
+      "address": "2236 Federal Ave Los Angeles, CA 90064",
+      "email": "nashville@wagsandwalks.org"
+    },
+    {
+      "id": 5,
+      "name": "Other",
+      "address": "",
+      "email": ""
+    }
+  ],
+  "sizes": [
+    {
+      "id": 1,
+      "type": "Small (1-19 lbs)"
+    },
+    {
+      "id": 2,
+      "type": "Medium (20-59 lbs)"
+    },
+    {
+      "id": 3,
+      "type": "Large (60+ lbs)"
+    }
+  ],
+  "ages": [
+    {
+      "id": 1,
+      "range": "Puppy (0-2 years)"
+    },
+    {
+      "id": 2,
+      "range": "Adult (3-7 years)"
+    },
+    {
+      "id": 3,
+      "range": "Senior (8+ years)"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "title": "W&W Training Classes",
+      "date": "April 12, 2022",
+      "time": "6:15 PM",
+      "location": "Wags and Walks Adoption Center",
+      "description": "Set your dog (6 months & older) up for success and create a stronger relationship through group training in a structured environment! Join us",
+      "rescueId": 4
+    },
+    {
+      "id": 2,
+      "title": "MACC Foster Open House",
+      "date": "May 23, 2022",
+      "time": "2:00 PM",
+      "location": "Metro Animal Care and Control",
+      "description": "We have plenty of pets in need of a loving foster home, so stop by our Foster Open House to meet a few of them! Learn about our foster program and take a foster dog or cat home that day! We will make sure you have all the food and supplies to make your home the perfect place for a foster pet.",
+      "rescueId": 1
+    },
+    {
+      "id": 3,
+      "title": "2022 Mutt Strutt",
+      "date": "August 30, 2022",
+      "time": "10:00 AM",
+      "location": "Shelby Bottoms Park",
+      "description": "Every year at the Music City Mutt Strutt more than 1,000 people and pooches alike will gather to strut their stuff for a great cause! All money raised through the Mutt Strutt enables the Nashville Humane Association to provide care and love to the animals entrusted to us each day. The event is outdoors, fun for the whole family and we will be awarding medals to all runners and special prizes at the event.",
+      "rescueId": 2
+    },
+    {
+      "id": 4,
+      "title": "34th Annual Cause for Paws",
+      "date": "September 28, 2022",
+      "time": "6:00 PM",
+      "location": "Belle Meade Country Club",
+      "description": "The annual kick-off to spring, Cause for Paws Fashion Show and Luncheon is one of Nashville Humane Association’s largest fundraisers. Held at the Belle Meade Country Club, guests enjoy a spring fashion show a delicious lunch and a silent auction with fantastic items.",
+      "rescueId": 2
+    }
+  ],
+  "blogPosts": [
+    {
+      "userId": 5,
+      "title": "Coco's adopted!",
+      "entryText": "After three months with our foster boy he has finally found the perfect family! He will have three brothers to run around with and continue to build his confidence. We couldn't be more exited for him.",
+      "dogId": 7,
+      "date": "3/16/2022",
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647460437/yrooudp4izlefke0gvn3.jpg",
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "title": "Bax Approved",
+      "entryText": "Baxter had the best day today. It was sunny and 70 and he ran ran ran all day. He still had some goofy energy when we came inside too.",
+      "dogId": 1,
+      "date": "3/16/2022",
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647460236/xvd2jpcjl1c764xhtuq6.jpg",
+      "id": 2
+    },
+    {
+      "userId": 7,
+      "title": "Pupcups > thunderstorms",
+      "entryText": "There was a huge storm yesterday and Teddy hid under the bed all day. We even lost power for a bit. So to make up for it we took Ted to get a pupcup from Starbucks (his favorite). He said he'll think about forgiving us for letting the storm happen.",
+      "dogId": 15,
+      "date": "3/24/2022",
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647545246/aovapvskvyydod8vqlbt.jpg",
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "title": "That's so fetch!",
+      "entryText": "Today we discovered just how much Destiny loves to play fetch! She doesn't always want to give the ball back, but she's learning so fast.",
+      "dogId": 10,
+      "date": "3/18/2022",
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647627938/eissfuk0tyfhpvwsj9od.jpg",
+      "id": 4
+    },
+    {
+      "userId": 7,
+      "title": "Cutest pup-kins in the patch",
+      "entryText": "Halloween is my favorite holiday so naturally it's also the pups. They wanted to dress up like the super hero's they are",
+      "dogId": 15,
+      "date": "3/18/2022",
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1647630027/dqin5rfvk8xrtwaqsz5n.jpg",
+      "id": 5
+    },
+    {
+      "userId": 2,
+      "title": "testttt",
+      "entryText": "testytesttest",
+      "dogId": 6,
+      "date": "3/24/2022",
+      "imageURL": "https://res.cloudinary.com/dfxsl6a2c/image/upload/v1648139596/default_dxztcl.jpg",
+      "id": 7
+    }
+  ]
 }
